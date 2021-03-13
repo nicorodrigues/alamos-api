@@ -16,9 +16,19 @@ export const getPublicationsFromUser = async (req: ExtendedRequest, res: Express
                         contact: "agus",
                         status: "read",
                         messages: [
-                            { id: 324, from: "agus", to: "nico", publication: 1, text: "tengo un auto", time: 1614819503960, read: true },
-                            { id: 327, from: "agus", to: "nico", publication: 1, text: "lo querés?", time: 1614819507960, read: true },
-                            { id: 329, from: "nico", to: "agus", publication: 1, text: "si", time: 1614819509960, read: false },
+                            { id: 329, from: "nico", to: "agus", owner_type: 'publications', owner_id: 1, text: "Pinta mi cerca", time: 1614819509960, read: false },
+                            { id: 324, from: "agus", to: "nico", owner_type: 'publications', owner_id: 1, text: "OBLIGAME", time: 1614819503960, read: true },
+                            { id: 327, from: "agus", to: "nico", owner_type: 'publications', owner_id: 1, text: "querés mi auto?", time: 1614819507960, read: true },
+                            { id: 329, from: "nico", to: "agus", owner_type: 'publications', owner_id: 1, text: "Si", time: 1614819509960, read: false },
+                        ],
+                    },
+                    {
+                        contact: "jorge",
+                        status: "read",
+                        messages: [
+                            { id: 324, from: "jorge", to: "nico", owner_type: 'publications', owner_id: 1, text: "tengo un auto", time: 1614819503960, read: true },
+                            { id: 327, from: "jorge", to: "nico", owner_type: 'publications', owner_id: 1, text: "lo querés?", time: 1614819507960, read: true },
+                            { id: 329, from: "nico", to: "jorge", owner_type: 'publications', owner_id: 1, text: "si", time: 1614819509960, read: false },
                         ],
                     },
                 ],
