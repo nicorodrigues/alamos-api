@@ -16,9 +16,9 @@ export const getPublicationsFromUser = async (req: ExtendedRequest, res: Express
                         contact: "agus",
                         status: "read",
                         messages: [
-                            { id: 329, from: "nico", to: "agus", owner_type: 'publications', owner_id: 1, text: "Pinta mi cerca", time: 1614819509960, read: false },
-                            { id: 324, from: "agus", to: "nico", owner_type: 'publications', owner_id: 1, text: "OBLIGAME", time: 1614819503960, read: true },
-                            { id: 327, from: "agus", to: "nico", owner_type: 'publications', owner_id: 1, text: "querés mi auto?", time: 1614819507960, read: true },
+                            { id: 329, from: "nico", to: "agus", owner_type: 'publications', owner_id: 1, text: "Hola!", time: 1614819509960, read: false },
+                            { id: 324, from: "agus", to: "nico", owner_type: 'publications', owner_id: 1, text: "Hola, cómo va?", time: 1614819503960, read: true },
+                            { id: 327, from: "agus", to: "nico", owner_type: 'publications', owner_id: 1, text: "te interesa mi auto?", time: 1614819507960, read: true },
                             { id: 329, from: "nico", to: "agus", owner_type: 'publications', owner_id: 1, text: "Si", time: 1614819509960, read: false },
                         ],
                     },
