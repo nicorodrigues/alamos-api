@@ -24,6 +24,8 @@ Token.belongsTo(User, { foreignKey: "user_id" });
 Role.hasMany(User, { foreignKey: "role" });
 
 // Publications
+Publication.belongsTo(User, { foreignKey: "user_id" });
+
 Publication.hasMany(Message, {
     foreignKey: "owner_id",
     constraints: false,
@@ -41,3 +43,6 @@ Message.belongsTo(Publication, {
     },
     as: "publication",
 });
+
+Message.belongsTo(User, { foreignKey: "from", as: 'from_user' });
+Message.belongsTo(User, { foreignKey: "to", as: 'to_user' });

@@ -4,6 +4,6 @@ import * as PublicationsController from "../controllers/PublicationsController";
 
 const router: express.Router = express.Router();
 
-router.get("/", PublicationsController.getPublicationsFromUser);
+router.get("/user/:id", PublicationsController.getPublicationsFromUser);
 
 export default router;
