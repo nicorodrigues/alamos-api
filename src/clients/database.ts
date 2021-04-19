@@ -1,7 +1,7 @@
 import { Sequelize } from "sequelize";
 import logger from "../services/logger";
 
-const sequelize = new Sequelize(process.env.MYSQL_DB, process.env.MYSQL_USER, process.env.MYSQL_PASS, {
+const sequelize = new Sequelize(process.env.MYSQL_DB, process.env.MYSQL_USER, process.env.MYSQL_PASS || null, {
     host: process.env.MYSQL_HOST,
     port: Number(process.env.MYSQL_PORT) || 3306,
     dialect: "mysql",
